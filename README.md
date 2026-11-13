@@ -6,12 +6,12 @@ Portal educativo estático sobre huertas escolares, tecnología y realidad aumen
 
 - Sitio responsive en español con secciones del proyecto, proceso, comparación, tecnología, multimedia y realidad aumentada.
 - Tres marcadores QR independientes: huerta vertical, huerta convencional y video explicativo del sistema de riego.
-- Fotos autorizadas del proceso alojadas en Cloudinary, esquemas ilustrados propios y el video animado de demostración de riego.
+- Fotos autorizadas del proceso y videos del proyecto alojados en Cloudinary, además de esquemas ilustrados propios.
 - Código Arduino de ejemplo y filtros de galería con ampliación accesible.
 
-Las fotografías autorizadas del proceso se sirven desde Cloudinary; las copias de carga se prepararon sin EXIF. Se omiten documentos de trabajo, resultados detallados y videos de campo con participantes. No copies aquí los directorios originales `1/`, `4/` o `5/` sin revisar el contenido, los permisos y los metadatos.
+Las fotografías autorizadas del proceso y los videos enlazados se sirven desde Cloudinary; las copias de carga de las fotos se prepararon sin EXIF. Se omiten documentos de trabajo y resultados detallados. No copies aquí los directorios originales `1/`, `4/` o `5/` sin revisar el contenido, los permisos y los metadatos.
 
-La página enlaza las 20 fotos de `cloudinary-upload/MANIFEST.tsv`. Las copias optimizadas y sin EXIF de esa carpeta se conservan localmente para referencia y están excluidas de Git.
+La página enlaza las 20 fotos y los videos registrados en `cloudinary-upload/MANIFEST.tsv`. Las copias de carga se conservan localmente para referencia y están excluidas de Git.
 
 ## Probar localmente
 
@@ -34,6 +34,6 @@ GitHub Pages entrega un subdominio `github.io` sin costo. Un dominio personaliza
 
 ## Visor de realidad aumentada
 
-Los QR son marcadores de seguimiento, no enlaces web. Las dos huertas usan `assets/markers/huertas-ra.mind` con índices 0 y 1; el riego usa `assets/markers/riego-automatico.mind` con índice 0 y muestra solo `media/riego-demo.mp4`. El visor solicita acceso a la cámara al iniciar.
+Los QR son marcadores de seguimiento, no enlaces web. Las dos huertas usan `assets/markers/huertas-ra.mind` con índices 0 y 1; el riego usa `assets/markers/riego-automatico.mind` con índice 0 y muestra el video `riego-demo.mp4` alojado en Cloudinary. El visor solicita acceso a la cámara al iniciar.
 
 El ejemplo Arduino es didáctico; calibra el sensor y valida el circuito antes de usarlo con una bomba real.
