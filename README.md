@@ -1,18 +1,19 @@
-# Sembrar para aprender — versión pública
+# Sembrar para aprender
 
-Portal educativo estático sobre huertas escolares, tecnología y realidad aumentada. Esta carpeta es una copia preparada para publicación pública; la versión de trabajo original permanece intacta en la carpeta principal.
+Sitio educativo responsive sobre las huertas escolares, su proceso, el componente Arduino y las experiencias de realidad aumentada. La versión pública conserva la estructura, el contenido y la línea gráfica de la página de trabajo; solo adapta las rutas de medios y presenta los resultados agregados de la encuesta de Arduino.
 
-## Contenido de esta versión
+## Contenido
 
-- Sitio responsive en español con secciones del proyecto, proceso, comparación, tecnología, multimedia y realidad aumentada.
-- Tres marcadores QR independientes: huerta vertical, huerta convencional y video explicativo del sistema de riego.
-- Fotos autorizadas del proceso y videos del proyecto alojados en Cloudinary, además de esquemas ilustrados propios.
-- Biblioteca con cuatro PDF pedagógicos y fichas técnicas revisadas; las copias públicas no conservan metadatos personales.
-- Código Arduino de ejemplo y filtros de galería con ampliación accesible.
+- Secciones de proyecto, bitácora, hallazgos, comparativa, tecnología, galería multimedia, biblioteca y realidad aumentada.
+- Fotografías y videos del proyecto servidos desde Cloudinary.
+- Filtros de galería, ampliación accesible de medios y tres marcadores QR independientes.
+- Ejemplo didáctico de Arduino con botón para copiar el código.
+- Gráfico interactivo con conteos agregados de la encuesta de sensores. El XLSX no se publica.
+- [Informe de entrega con las URL del sitio, documentos y marcadores QR](INFORME-ENTREGA.md).
 
-Las fotografías autorizadas del proceso y los videos enlazados se sirven desde Cloudinary; las copias de carga de las fotos se prepararon sin EXIF. Se excluyen formularios con datos de identificación, respuestas de encuestas, documentos con contactos de autores y archivos con enlaces internos a unidades compartidas. No copies aquí los directorios originales `1/`, `4/` o `5/` sin revisar el contenido, los permisos y los metadatos.
+Las imágenes y videos de la página usan las direcciones del manifiesto `cloudinary-upload/MANIFEST.tsv`. Las copias locales de carga se conservan solo para referencia y están excluidas de Git.
 
-La página enlaza las 20 fotos y los videos registrados en `cloudinary-upload/MANIFEST.tsv`. Los cuatro PDF de `docs/` son copias revisadas con metadatos de autor eliminados. Las copias de carga de `cloudinary-upload/` se conservan localmente para referencia y están excluidas de Git.
+La biblioteca conserva sus nueve tarjetas. Siete documentos (ficha del proyecto, artículo, actividades 1, 2 y 3, encuesta diagnóstica de compost e informe de Arduino) están enlazados desde Cloudinary. La ficha conjunta de cultivos y el modelo pedagógico usan copias en `docs/`. Los documentos externos deben ser copias revisadas y autorizadas; no copies aquí los directorios originales `1/`, `4/` o `5/`.
 
 ## Probar localmente
 

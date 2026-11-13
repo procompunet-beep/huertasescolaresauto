@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=library">
+  <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
 </head>
 <body>
@@ -30,7 +30,6 @@
       <a href="#comparativa">Comparativa</a>
       <a href="#tecnologia">Tecnología</a>
       <a href="#multimedia">Multimedia</a>
-      <a href="#documentos">Biblioteca</a>
       <a class="nav-cta" href="#realidad-aumentada">Explorar en RA <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
@@ -71,7 +70,7 @@
         <div class="project-description">
           <p>En una institución educativa de Neiva, estudiantes y docentes construyen dos prototipos de huerta como complemento a los procesos formativos: uno vertical y otro convencional. La realidad aumentada acerca sus diseños al aula.</p>
           <p>El proyecto combina actividades de siembra, elaboración de compostaje, exploración de sensores y experiencias prácticas de aprendizaje.</p>
-          <p class="public-note">Esta copia incluye fotografías autorizadas sin EXIF y omite documentos de trabajo con información personal.</p>
+          <a class="text-link link-green" href="https://res.cloudinary.com/uekr7zb5/image/upload/v1794543744/ficha-proyecto-investigacion.pdf" target="_blank" rel="noopener">Consultar ficha del proyecto <span aria-hidden="true">↗</span></a>
         </div>
         <div class="project-cards">
           <article class="project-card card-green">
@@ -101,9 +100,21 @@
         </div>
       </div>
       <figure class="research-quote">
-        <blockquote>La huerta puede conectar el cuidado del territorio, la agroecología y los saberes que se construyen mediante la experiencia.</blockquote>
-        <figcaption>Síntesis editorial del enfoque educativo del proyecto.</figcaption>
+        <blockquote>«La presente investigación analiza la configuración de competencias agroecológicas, la recuperación de saberes ancestrales y la apropiación territorial…»</blockquote>
+        <figcaption>Extracto del resumen · Díaz Sánchez, Chávez Soto y Rubiano Llorente · <a href="#articulo-ecopedagogia">Consultar artículo completo</a></figcaption>
       </figure>
+      <article class="project-film" aria-labelledby="project-film-title">
+        <div class="project-film-copy">
+          <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> La voz del proyecto</p>
+          <h3 id="project-film-title">Conoce a quienes impulsan la huerta.</h3>
+          <p>Quienes lideran la iniciativa presentan el proyecto y explican por qué cultivar también puede abrir nuevas oportunidades para aprender.</p>
+          <a class="text-link link-green" href="#multimedia">Explorar todos los videos <span aria-hidden="true">↓</span></a>
+        </div>
+        <video class="project-film-video" controls preload="none" poster="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534770/diseno-sistemas-goteo4.jpg" aria-label="Presentación de las personas que lideran el proyecto de huertas escolares">
+          <source src="https://res.cloudinary.com/uekr7zb5/video/upload/v1794536805/introduccion-proyecto-huertas.mp4" type="video/mp4">
+          Tu navegador no puede reproducir este video.
+        </video>
+      </article>
     </section>
 
     <section class="process-section section-pad" id="bitacora" aria-labelledby="process-title">
@@ -120,7 +131,7 @@
           <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534770/fase-1-aplicacion-de-prueba-diagnostica.jpg" alt="Estudiantes respondiendo la prueba diagnóstica" loading="lazy">
           <p class="timeline-label">Explorar</p>
           <h3>Preguntar para empezar</h3>
-          <p>Reconocer saberes previos sobre huertas y compostaje antes de iniciar las actividades.</p>
+          <p>Prueba diagnóstica con estudiantes de grado 904 para reconocer saberes previos sobre huertas y compostaje.</p>
         </article>
         <article class="timeline-step">
           <span class="timeline-count">02</span>
@@ -151,17 +162,42 @@
       <div class="findings-intro">
         <p class="eyebrow">03 / Lo que nos cuentan los datos</p>
         <h2 id="findings-title">Escuchar antes<br>de <em>sembrar.</em></h2>
-        <p>La evaluación diagnóstica permitió reconocer saberes previos sobre huertas y compostaje. Los instrumentos y resultados detallados no se distribuyen en esta copia pública.</p>
-        <a class="button button-light" href="#documentos">Sobre los materiales <span aria-hidden="true">↗</span></a>
+        <p>La prueba diagnóstica inicial se aplicó a 14 estudiantes del grado 904. Estas respuestas muestran oportunidades para orientar las actividades; no representan una medición posterior al proyecto.</p>
+        <a class="button button-light" href="#documentos">Explorar documentos <span aria-hidden="true">↗</span></a>
       </div>
       <div class="findings-data">
-        <div class="survey-head"><span>ENFOQUE DE LA EXPLORACIÓN</span><span>Aprender haciendo</span></div>
-        <div class="public-insight">
-          <span class="technology-index">01 · OBSERVAR</span>
-          <h3>Preguntar para orientar</h3>
-          <p>Las actividades iniciales ayudan a identificar temas para explorar mediante prácticas de cultivo, compostaje y cuidado ambiental.</p>
+        <div class="survey-head"><span>ENCUESTA DIAGNÓSTICA</span><span>n = 14 estudiantes</span></div>
+        <div class="survey-stat">
+          <div class="stat-top"><span>Reconocen el cuidado ambiental como beneficio</span><strong>64%</strong></div>
+          <div class="stat-track" role="img" aria-label="64 por ciento, 9 de 14 estudiantes"><span style="--value:64%"></span></div>
+          <span class="stat-caption">9 de 14 estudiantes · Valor ambiental de la huerta</span>
         </div>
-        <p class="data-source">Los datos individuales y los documentos fuente se mantienen fuera de esta versión pública.</p>
+        <div class="survey-stat">
+          <div class="stat-top"><span>Conocen el abono orgánico, pero no cómo prepararlo</span><strong>57%</strong></div>
+          <div class="stat-track" role="img" aria-label="57 por ciento, 8 de 14 estudiantes"><span style="--value:57%"></span></div>
+          <span class="stat-caption">8 de 14 estudiantes · Necesidad de aprendizaje práctico</span>
+        </div>
+        <div class="survey-stat">
+          <div class="stat-top"><span>No conocen cómo preparar compost</span><strong>57%</strong></div>
+          <div class="stat-track" role="img" aria-label="57 por ciento, 8 de 14 estudiantes"><span style="--value:57%"></span></div>
+          <span class="stat-caption">8 de 14 estudiantes · Punto de partida para los talleres</span>
+        </div>
+        <p class="data-source">Fuente: síntesis de la prueba diagnóstica incluida en el expediente del proyecto. Los porcentajes corresponden a respuestas del grupo participante.</p>
+        <div class="sensor-survey-chart" id="sensor-survey-chart" aria-labelledby="sensor-survey-title">
+          <details class="sensor-survey-panel">
+            <summary class="sensor-survey-overview">
+              <span>
+                <span class="sensor-survey-kicker">Arduino y sensores · n = 25</span>
+                <span class="sensor-survey-title" id="sensor-survey-title">Explora las respuestas</span>
+              </span>
+              <span class="sensor-survey-total">10 preguntas</span>
+            </summary>
+            <div class="sensor-survey-content">
+              <div class="sensor-survey-accordion" id="sensor-survey-accordion" aria-label="Preguntas de la encuesta de Arduino y sensores"></div>
+              <p class="sensor-survey-note">Porcentajes calculados desde los conteos de la encuesta. No se publica el archivo XLSX.</p>
+            </div>
+          </details>
+        </div>
       </div>
     </section>
 
@@ -179,17 +215,17 @@
       </div>
       <div class="comparison-gallery" data-layout="side-by-side">
         <figure class="comparison-image vertical-image">
-          <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534768/paso-a-paso-de-la-instalacion-de-la-estructura-vertical-1.png" alt="Estructura de la huerta vertical durante el armado" loading="lazy">
+          <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534768/paso-a-paso-de-la-instalacion-de-la-estructura-vertical-1.png" alt="Registro visual del diseño de una estructura para huerta vertical" loading="lazy">
           <figcaption><span>A · HUERTO VERTICAL</span><strong>Crecer hacia arriba</strong></figcaption>
         </figure>
         <figure class="comparison-image conventional-image">
-          <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534768/huerto-convencional-listo-para-sembrar.jpg" alt="Espacio de huerta convencional preparado para sembrar" loading="lazy">
+          <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534768/huerto-convencional-listo-para-sembrar.jpg" alt="Huerto convencional preparado para la siembra" loading="lazy">
           <figcaption><span>B · HUERTO CONVENCIONAL</span><strong>Crecer a ras del suelo</strong></figcaption>
         </figure>
         <div class="compare-range-wrap" hidden>
           <div class="compare-range" role="group" aria-label="Comparador visual de los prototipos">
-            <img class="compare-base" src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534768/huerto-convencional-listo-para-sembrar.jpg" alt="Espacio de huerta convencional preparado para sembrar" loading="lazy">
-            <div class="compare-overlay"><img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534768/paso-a-paso-de-la-instalacion-de-la-estructura-vertical-1.png" alt="Estructura de la huerta vertical durante el armado" loading="lazy"></div>
+            <img class="compare-base" src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534768/huerto-convencional-listo-para-sembrar.jpg" alt="Huerto convencional listo para sembrar" loading="lazy">
+            <div class="compare-overlay"><img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534768/paso-a-paso-de-la-instalacion-de-la-estructura-vertical-1.png" alt="Diseño de estructura de huerto vertical" loading="lazy"></div>
             <span class="compare-label compare-label-left">VERTICAL</span><span class="compare-label compare-label-right">CONVENCIONAL</span>
             <input class="compare-range-input" type="range" min="10" max="90" value="50" aria-label="Desliza para comparar huerto vertical y convencional">
             <span class="compare-divider" aria-hidden="true"></span>
@@ -263,7 +299,10 @@ void loop() {
   delay(1000);               // Espera antes de la siguiente lectura
 }</code></pre>
         <p class="code-note">Ejemplo didáctico: las lecturas dependen del sensor y requieren calibración. El LED indica cuándo revisar el sustrato; no sustituye la observación de las plantas.</p>
-        <p class="public-note">Los informes y encuestas originales no se distribuyen en esta copia pública.</p>
+        <div class="technology-resources">
+          <a class="text-link link-green" href="https://res.cloudinary.com/uekr7zb5/image/upload/v1794543743/informe-arduino-sensores.pdf" target="_blank" rel="noopener">Informe Arduino y sensores <span aria-hidden="true">↗</span></a>
+          <a class="text-link link-green" href="#sensor-survey-chart">Ver resumen gráfico de la encuesta <span aria-hidden="true">↗</span></a>
+        </div>
         <p class="copy-status" role="status" aria-live="polite"></p>
       </div>
     </section>
@@ -274,7 +313,7 @@ void loop() {
           <p class="eyebrow">06 / Galería multimedia</p>
           <h2 id="multimedia-title">Cada etapa deja<br><em>su huella.</em></h2>
         </div>
-        <p class="heading-aside">Registros fotográficos del proceso<br>y una demostración animada.</p>
+        <p class="heading-aside">Fotografías y video del proceso:<br>del diagnóstico al monitoreo.</p>
       </div>
       <div class="gallery-filters" role="group" aria-label="Filtrar galería multimedia">
         <button class="gallery-filter is-active" type="button" data-filter="all" aria-pressed="true">Todos</button>
@@ -284,7 +323,7 @@ void loop() {
       </div>
       <div class="multimedia-grid" id="galeria" aria-label="Galería de fotos y videos del proyecto">
         <figure class="media-card" data-category="field">
-          <button class="media-trigger" type="button" aria-label="Ampliar foto: prueba diagnóstica">
+          <button class="media-trigger" type="button" aria-label="Ampliar foto: estudiantes respondiendo la prueba diagnóstica">
             <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534770/fase-1-aplicacion-de-prueba-diagnostica.jpg" alt="Estudiantes respondiendo la prueba diagnóstica" loading="lazy">
             <span class="media-open" aria-hidden="true">↗</span>
           </button>
@@ -292,34 +331,34 @@ void loop() {
         </figure>
         <figure class="media-card" data-category="field">
           <button class="media-trigger" type="button" aria-label="Ampliar foto: preparación de tierra para la siembra">
-            <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534768/foto-preparando-tierra.jpg" alt="Preparación de tierra para la siembra" loading="lazy">
+            <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534768/foto-preparando-tierra.jpg" alt="Estudiante preparando tierra para la siembra" loading="lazy">
             <span class="media-open" aria-hidden="true">↗</span>
           </button>
           <figcaption><span>Preparación</span>Un sustrato listo para recibir semillas</figcaption>
         </figure>
         <figure class="media-card" data-category="field">
-          <button class="media-trigger" type="button" aria-label="Ampliar foto: elaboración de compost">
+          <button class="media-trigger" type="button" aria-label="Ampliar foto: preparación colaborativa de compost">
             <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534769/fase-2-elaboracion-de-compost.jpg" alt="Preparación colaborativa de compost" loading="lazy">
             <span class="media-open" aria-hidden="true">↗</span>
           </button>
           <figcaption><span>Compostaje</span>Transformar residuos orgánicos en abono</figcaption>
         </figure>
         <figure class="media-card" data-category="field">
-          <button class="media-trigger" type="button" aria-label="Ampliar foto: personalización de materas">
-            <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534769/fase-3-pintura-y-personalizacion-de-las-materas.jpg" alt="Personalización de materas para la huerta" loading="lazy">
+          <button class="media-trigger" type="button" aria-label="Ampliar foto: estudiantes personalizando materas">
+            <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534769/fase-3-pintura-y-personalizacion-de-las-materas.jpg" alt="Estudiantes personalizando materas para la huerta" loading="lazy">
             <span class="media-open" aria-hidden="true">↗</span>
           </button>
           <figcaption><span>Diseño</span>Personalizar materas para cada cultivo</figcaption>
         </figure>
         <figure class="media-card" data-category="field">
-          <button class="media-trigger" type="button" aria-label="Ampliar foto: estructura de la huerta vertical">
+          <button class="media-trigger" type="button" aria-label="Ampliar foto: instalación de la estructura de la huerta vertical">
             <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534768/paso-a-paso-de-la-instalacion-de-la-estructura-vertical-1.png" alt="Estructura de la huerta vertical durante el armado" loading="lazy">
             <span class="media-open" aria-hidden="true">↗</span>
           </button>
           <figcaption><span>Armado vertical</span>Montar una estructura para aprovechar el espacio</figcaption>
         </figure>
         <figure class="media-card" data-category="field">
-          <button class="media-trigger" type="button" aria-label="Ampliar foto: implementación de la huerta">
+          <button class="media-trigger" type="button" aria-label="Ampliar foto: estudiantes implementando la huerta">
             <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534769/fase-4-implementacion-de-la-huerta-escolar.jpg" alt="Estudiantes implementando la huerta escolar" loading="lazy">
             <span class="media-open" aria-hidden="true">↗</span>
           </button>
@@ -327,7 +366,7 @@ void loop() {
         </figure>
         <figure class="media-card" data-category="field">
           <button class="media-trigger" type="button" aria-label="Ampliar foto: lechuga creciendo en una matera">
-            <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534769/foto-lechuga-en-matera.jpg" alt="Lechuga crespa creciendo en una matera" loading="lazy">
+            <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534769/foto-lechuga-en-matera.jpg" alt="Lechuga creciendo en una matera" loading="lazy">
             <span class="media-open" aria-hidden="true">↗</span>
           </button>
           <figcaption><span>Cultivo</span>Lechuga crespa en crecimiento</figcaption>
@@ -340,7 +379,7 @@ void loop() {
           <figcaption><span>Cultivo</span>Observar el desarrollo del orégano</figcaption>
         </figure>
         <figure class="media-card" data-category="field">
-          <button class="media-trigger" type="button" aria-label="Ampliar foto: preparación de semillas">
+          <button class="media-trigger" type="button" aria-label="Ampliar foto: semillas preparadas para el cultivo">
             <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534768/foto-preparando-semillas.jpg" alt="Preparación de semillas para el cultivo" loading="lazy">
             <span class="media-open" aria-hidden="true">↗</span>
           </button>
@@ -353,155 +392,153 @@ void loop() {
           </button>
           <figcaption><span>Compostaje</span>Aprender a preparar abono</figcaption>
         </figure>
-        <figure class="media-card" data-category="field">
-          <button class="media-trigger" type="button" aria-label="Ampliar foto: materas listas para sembrar">
-            <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534770/estudiantes-listos-para-sembrar-en-materas-1.jpg" alt="Estudiantes mostrando sus materas listas para sembrar" loading="lazy">
-            <span class="media-open" aria-hidden="true">↗</span>
-          </button>
-          <figcaption><span>Prototipos</span>Estudiantes presentan sus materas listas</figcaption>
+        <figure class="media-card" data-category="video">
+          <video controls preload="none" poster="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534770/estudiantes-listos-para-sembrar-en-materas-1.jpg" aria-label="Video de estudiantes mostrando sus materas ya listas">
+            <source src="https://res.cloudinary.com/uekr7zb5/video/upload/v1794536792/materas-listas.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+          </video>
+          <button class="media-video-open" type="button" aria-label="Ampliar video: estudiantes muestran sus materas">Ampliar video <span aria-hidden="true">↗</span></button>
+          <figcaption><span>Video · Prototipos</span>Estudiantes muestran sus materas listas</figcaption>
         </figure>
-        <figure class="media-card" data-category="field">
-          <button class="media-trigger" type="button" aria-label="Ampliar foto: huerto convencional preparado para sembrar">
-            <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534768/huerto-convencional-listo-para-sembrar.jpg" alt="Huerto convencional preparado para la siembra" loading="lazy">
-            <span class="media-open" aria-hidden="true">↗</span>
-          </button>
-          <figcaption><span>Huerto convencional</span>Preparar el suelo para el cultivo</figcaption>
+        <figure class="media-card" data-category="video">
+          <video controls preload="none" poster="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534770/diseno-sistemas-goteo4.jpg" aria-label="Video de presentación del proyecto y sus líderes">
+            <source src="https://res.cloudinary.com/uekr7zb5/video/upload/v1794536805/introduccion-proyecto-huertas.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+          </video>
+          <button class="media-video-open" type="button" aria-label="Ampliar video: presentación del proyecto">Ampliar video <span aria-hidden="true">↗</span></button>
+          <figcaption><span>Presentación</span>Quiénes lideran la iniciativa y por qué importa</figcaption>
         </figure>
-        <figure class="media-card" data-category="technology">
-          <button class="media-trigger" type="button" aria-label="Ampliar foto: explicación del diseño de riego">
-            <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534770/diseno-sistemas-goteo3.jpg" alt="Explicación del diseño de riego en el aula" loading="lazy">
-            <span class="media-open" aria-hidden="true">↗</span>
-          </button>
-          <figcaption><span>Diseño de riego</span>Conversar y proponer mejoras para el sistema</figcaption>
+        <figure class="media-card" data-category="video technology">
+          <video controls preload="none" poster="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534768/laboratorio-protoboard-sensores.jpg" aria-label="Demostración del sensor de humedad del suelo">
+            <source src="https://res.cloudinary.com/uekr7zb5/video/upload/v1794536796/demostracion-sensor-humedad.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+          </video>
+          <button class="media-video-open" type="button" aria-label="Ampliar video: demostración del sensor de humedad">Ampliar video <span aria-hidden="true">↗</span></button>
+          <figcaption><span>Sensor de humedad</span>Probar la lectura de humedad del suelo</figcaption>
         </figure>
-        <figure class="media-card" data-category="technology">
-          <button class="media-trigger" type="button" aria-label="Ampliar foto: socialización del proyecto">
-            <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534770/diseno-sistemas-goteo4.jpg" alt="Socialización del proyecto de huerta escolar" loading="lazy">
-            <span class="media-open" aria-hidden="true">↗</span>
-          </button>
-          <figcaption><span>Socialización</span>Compartir ideas sobre el proyecto</figcaption>
+        <figure class="media-card" data-category="video technology">
+          <video controls preload="none" poster="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534770/diseno-sistemas-goteo6.jpg" aria-label="Video del sistema de riego automatizado">
+            <source src="https://res.cloudinary.com/uekr7zb5/video/upload/v1794536798/sistema-riego-automatizado.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+          </video>
+          <button class="media-video-open" type="button" aria-label="Ampliar video: sistema de riego automatizado">Ampliar video <span aria-hidden="true">↗</span></button>
+          <figcaption><span>Riego automatizado</span>Explorar una aplicación del monitoreo</figcaption>
         </figure>
-        <figure class="media-card" data-category="technology">
-          <button class="media-trigger" type="button" aria-label="Ampliar foto: actividad de aula sobre riego">
-            <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534770/diseno-sistemas-goteo6.jpg" alt="Participantes conversan sobre el sistema de riego en el aula" loading="lazy">
-            <span class="media-open" aria-hidden="true">↗</span>
-          </button>
-          <figcaption><span>Pruebas</span>Conversar sobre el sistema de riego en el aula</figcaption>
-        </figure>
-        <figure class="media-card" data-category="technology">
-          <button class="media-trigger" type="button" aria-label="Ampliar foto: actividad de electrónica">
-            <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534768/laboratorio-electronica.jpg" alt="Actividad de electrónica y programación en el laboratorio" loading="lazy">
-            <span class="media-open" aria-hidden="true">↗</span>
-          </button>
-          <figcaption><span>Aprendizaje</span>Conectar programación y trabajo en equipo</figcaption>
+        <figure class="media-card" data-category="video technology">
+          <video controls preload="none" poster="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534768/laboratorio-electronica.jpg" aria-label="Video de gráficas de los sensores de humedad">
+            <source src="https://res.cloudinary.com/uekr7zb5/video/upload/v1794536790/graficas-sensores-humedad.mp4" type="video/mp4">
+            Tu navegador no puede reproducir este video.
+          </video>
+          <button class="media-video-open" type="button" aria-label="Ampliar video: gráficas de sensores de humedad">Ampliar video <span aria-hidden="true">↗</span></button>
+          <figcaption><span>Datos y gráficas</span>Observar cómo cambian las lecturas del sensor</figcaption>
         </figure>
         <figure class="media-card" data-category="technology">
-          <button class="media-trigger" type="button" aria-label="Ampliar foto: estudiantes trabajando con Arduino">
-            <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534770/chicos-en-laboratorio-de-electronica-ardunio.jpg" alt="Estudiantes explorando electrónica y Arduino" loading="lazy">
+          <button class="media-trigger" type="button" aria-label="Ampliar foto: estudiantes en el laboratorio de electrónica Arduino">
+            <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534770/chicos-en-laboratorio-de-electronica-ardunio.jpg" alt="Estudiantes explorando electrónica y Arduino en el laboratorio" loading="lazy">
             <span class="media-open" aria-hidden="true">↗</span>
           </button>
           <figcaption><span>Tecnología</span>Primeros pasos con electrónica y Arduino</figcaption>
         </figure>
         <figure class="media-card" data-category="technology">
-          <button class="media-trigger" type="button" aria-label="Ampliar foto: componentes de Arduino">
+          <button class="media-trigger" type="button" aria-label="Ampliar foto: estudiantes trabajando con Arduino">
             <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534771/chicos-en-laboratorio-de-electronica-ardunio-2.jpg" alt="Estudiantes trabajando con componentes Arduino" loading="lazy">
             <span class="media-open" aria-hidden="true">↗</span>
           </button>
           <figcaption><span>Sensores</span>Explorar componentes para el monitoreo</figcaption>
         </figure>
         <figure class="media-card" data-category="technology">
-          <button class="media-trigger" type="button" aria-label="Ampliar foto: protoboard y sensores">
-            <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534768/laboratorio-protoboard-sensores.jpg" alt="Prototipo de sensores conectado en una protoboard" loading="lazy">
+          <button class="media-trigger" type="button" aria-label="Ampliar foto: estudiante probando un prototipo de riego con sensores">
+            <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534770/diseno-sistemas-goteo6.jpg" alt="Estudiante y docente observando un prototipo electrónico junto a una matera" loading="lazy">
+            <span class="media-open" aria-hidden="true">↗</span>
+          </button>
+          <figcaption><span>Pruebas</span>Observar el prototipo durante una demostración</figcaption>
+        </figure>
+        <figure class="media-card" data-category="technology">
+          <button class="media-trigger" type="button" aria-label="Ampliar foto: explicación del proyecto en el aula">
+            <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534768/laboratorio-electronica.jpg" alt="Docente explicando el proyecto en el aula con código proyectado" loading="lazy">
+            <span class="media-open" aria-hidden="true">↗</span>
+          </button>
+          <figcaption><span>Aprendizaje</span>Conectar programación y trabajo en equipo</figcaption>
+        </figure>
+        <figure class="media-card" data-category="technology">
+          <button class="media-trigger" type="button" aria-label="Ampliar foto: estudiantes observando un circuito de sensores">
+            <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534768/laboratorio-protoboard-sensores.jpg" alt="Estudiantes y docente revisando un circuito de sensores junto a una planta" loading="lazy">
             <span class="media-open" aria-hidden="true">↗</span>
           </button>
           <figcaption><span>Electrónica</span>Revisar el circuito que acompaña el cultivo</figcaption>
         </figure>
         <figure class="media-card" data-category="technology">
-          <button class="media-trigger" type="button" aria-label="Ampliar esquema: componentes de Arduino para monitoreo">
-            <img src="media/arduino.svg" alt="Esquema de Arduino, sensor de humedad y planta" loading="lazy">
+          <button class="media-trigger" type="button" aria-label="Ampliar foto: docente presentando el diseño de riego al grupo">
+            <img src="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534770/diseno-sistemas-goteo3.jpg" alt="Docente presenta el diseño de riego a estudiantes en el aula" loading="lazy">
             <span class="media-open" aria-hidden="true">↗</span>
           </button>
-          <figcaption><span>Diagrama de referencia</span>Componentes para observar la humedad del suelo</figcaption>
-        </figure>
-        <figure class="media-card media-card--featured" data-category="video field">
-          <video controls preload="metadata" poster="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534770/diseno-sistemas-goteo4.jpg" aria-label="Presentación de las personas que lideran el proyecto de huertas escolares">
-            <source src="https://res.cloudinary.com/uekr7zb5/video/upload/v1794536805/introduccion-proyecto-huertas.mp4" type="video/mp4">
-            Tu navegador no puede reproducir este video.
-          </video>
-          <button class="media-video-open" type="button" aria-label="Ampliar video: presentación del proyecto">Ampliar video <span aria-hidden="true">↗</span></button>
-          <figcaption><span>Conoce el proyecto</span>Las personas que lideran la iniciativa explican su propósito y valor educativo</figcaption>
-        </figure>
-        <figure class="media-card" data-category="video field">
-          <video controls preload="metadata" poster="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534770/estudiantes-listos-para-sembrar-en-materas-1.jpg" aria-label="Video de estudiantes mostrando las materas listas para sembrar">
-            <source src="https://res.cloudinary.com/uekr7zb5/video/upload/v1794536792/materas-listas.mp4" type="video/mp4">
-            Tu navegador no puede reproducir este video.
-          </video>
-          <button class="media-video-open" type="button" aria-label="Ampliar video: estudiantes muestran sus materas">Ampliar video <span aria-hidden="true">↗</span></button>
-          <figcaption><span>Presentación de materas</span>Estudiantes muestran sus materas listas para sembrar</figcaption>
-        </figure>
-        <figure class="media-card media-card--portrait" data-category="video technology">
-          <video controls preload="metadata" poster="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534768/laboratorio-protoboard-sensores.jpg" aria-label="Video vertical con gráficas de los sensores de humedad">
-            <source src="https://res.cloudinary.com/uekr7zb5/video/upload/v1794536790/graficas-sensores-humedad.mp4" type="video/mp4">
-            Tu navegador no puede reproducir este video.
-          </video>
-          <button class="media-video-open" type="button" aria-label="Ampliar video: gráficas de humedad">Ampliar video <span aria-hidden="true">↗</span></button>
-          <figcaption><span>Datos de sensores</span>Visualizar las mediciones de humedad registradas</figcaption>
-        </figure>
-        <figure class="media-card" data-category="video technology">
-          <video controls preload="metadata" poster="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534768/laboratorio-protoboard-sensores.jpg" aria-label="Demostración del sensor de humedad del suelo">
-            <source src="https://res.cloudinary.com/uekr7zb5/video/upload/v1794536796/demostracion-sensor-humedad.mp4" type="video/mp4">
-            Tu navegador no puede reproducir este video.
-          </video>
-          <button class="media-video-open" type="button" aria-label="Ampliar video: demostración del sensor de humedad">Ampliar video <span aria-hidden="true">↗</span></button>
-          <figcaption><span>Sensor de humedad</span>Demostración del monitoreo de humedad del suelo</figcaption>
-        </figure>
-        <figure class="media-card" data-category="video technology">
-          <video controls preload="metadata" poster="https://res.cloudinary.com/uekr7zb5/image/upload/v1794534770/diseno-sistemas-goteo3.jpg" aria-label="Video del sistema de riego automatizado">
-            <source src="https://res.cloudinary.com/uekr7zb5/video/upload/v1794536798/sistema-riego-automatizado.mp4" type="video/mp4">
-            Tu navegador no puede reproducir este video.
-          </video>
-          <button class="media-video-open" type="button" aria-label="Ampliar video: sistema de riego automatizado">Ampliar video <span aria-hidden="true">↗</span></button>
-          <figcaption><span>Riego automatizado</span>Presentación del sistema y su funcionamiento</figcaption>
-        </figure>
-        <figure class="media-card" data-category="video technology">
-          <video controls preload="metadata" poster="media/riego-demo-poster.svg" aria-label="Video explicativo del sistema de riego automático">
-            <source src="https://res.cloudinary.com/uekr7zb5/video/upload/v1794536794/riego-demo.mp4" type="video/mp4">
-            Tu navegador no puede reproducir este video.
-          </video>
-          <button class="media-video-open" type="button" aria-label="Ampliar video: explicación del sistema de riego">Ampliar video <span aria-hidden="true">↗</span></button>
-          <figcaption><span>Demostración animada</span>Sensor, Arduino y bomba para el riego automático</figcaption>
+          <figcaption><span>Diseño de riego</span>Conversar y proponer mejoras para el sistema</figcaption>
         </figure>
       </div>
     </section>
 
     <section class="documents-section section-pad" id="documentos" aria-labelledby="documents-title">
       <div class="section-heading heading-row">
-        <div><p class="eyebrow">07 / Biblioteca del proyecto</p><h2 id="documents-title">Documentación para<br><em>seguir aprendiendo.</em></h2></div>
-        <p class="heading-aside">Actividades pedagógicas y fichas técnicas;<br>datos personales y encuestas excluidos.</p>
+        <div><p class="eyebrow">07 / Biblioteca del proyecto</p><h2 id="documents-title">Ideas, guías y<br><em>hallazgos.</em></h2></div>
+        <p class="heading-aside">Consulta los documentos originales.<br>Ábrelos aquí o guárdalos.</p>
       </div>
       <div class="document-list">
         <article class="document-card">
           <span class="document-icon" aria-hidden="true">PDF</span>
-          <div class="document-info"><p>MODELO PEDAGÓGICO</p><h3>Modelo pedagógico institucional</h3><span>Marco educativo de la Institución Educativa Promoción Social.</span></div>
-          <div class="document-actions"><a href="docs/modelo-pedagogico-institucional.pdf" target="_blank" rel="noopener" aria-label="Abrir modelo pedagógico institucional en una pestaña nueva">Abrir PDF ↗</a><a href="docs/modelo-pedagogico-institucional.pdf" download>Descargar ↓</a></div>
+          <div class="document-info"><p>PROYECTO · 30 PÁGINAS</p><h3>Ficha de proyecto de investigación</h3><span>Contexto, ficha institucional y prueba diagnóstica del proyecto PDTZSUR772025.</span></div>
+          <div class="document-actions"><button class="preview-button" type="button" data-pdf="https://res.cloudinary.com/uekr7zb5/image/upload/v1794543744/ficha-proyecto-investigacion.pdf" aria-expanded="false">Vista previa</button><a href="https://res.cloudinary.com/uekr7zb5/image/upload/v1794543744/ficha-proyecto-investigacion.pdf" download>Descargar <span aria-hidden="true">↓</span></a></div>
+          <div class="pdf-preview" hidden></div>
+        </article>
+        <article class="document-card" id="articulo-ecopedagogia">
+          <span class="document-icon" aria-hidden="true">PDF</span>
+          <div class="document-info"><p>ARTÍCULO · PRAXIS ECOPEDAGÓGICA</p><h3>Praxis ecopedagógica y saberes ancestrales</h3><span>Un modelo integrador de agricultura vertical, compostaje y mediación artística en la educación.</span></div>
+          <div class="document-actions"><button class="preview-button" type="button" data-pdf="https://res.cloudinary.com/uekr7zb5/image/upload/v1794543745/articulo-praxis-ecopedagogica.pdf" aria-expanded="false">Vista previa</button><a href="https://res.cloudinary.com/uekr7zb5/image/upload/v1794543745/articulo-praxis-ecopedagogica.pdf" download>Descargar <span aria-hidden="true">↓</span></a></div>
+          <div class="pdf-preview" hidden></div>
         </article>
         <article class="document-card">
           <span class="document-icon" aria-hidden="true">PDF</span>
-          <div class="document-info"><p>CULTIVOS</p><h3>Fichas técnicas de lechuga crespa y orégano</h3><span>Características y recomendaciones para los cultivos de la huerta escolar.</span></div>
-          <div class="document-actions"><a href="docs/fichas-lechuga-y-oregano.pdf" target="_blank" rel="noopener" aria-label="Abrir fichas técnicas de lechuga crespa y orégano en una pestaña nueva">Abrir PDF ↗</a><a href="docs/fichas-lechuga-y-oregano.pdf" download>Descargar ↓</a></div>
+          <div class="document-info"><p>ACTIVIDAD · GUÍA</p><h3>Información sobre huertas escolares</h3><span>Actividad 1 · Exploración inicial del tema y de los conceptos clave.</span></div>
+          <div class="document-actions"><button class="preview-button" type="button" data-pdf="https://res.cloudinary.com/uekr7zb5/image/upload/v1794543749/actividad-1-informacion-huertas-escolares.pdf" aria-expanded="false">Vista previa</button><a href="https://res.cloudinary.com/uekr7zb5/image/upload/v1794543749/actividad-1-informacion-huertas-escolares.pdf" download>Descargar <span aria-hidden="true">↓</span></a></div>
+          <div class="pdf-preview" hidden></div>
         </article>
         <article class="document-card">
           <span class="document-icon" aria-hidden="true">PDF</span>
-          <div class="document-info"><p>CULTIVOS</p><h3>Ficha técnica de orégano</h3><span>Información de referencia para reconocer y cuidar el cultivo.</span></div>
-          <div class="document-actions"><a href="docs/ficha-tecnica-oregano.pdf" target="_blank" rel="noopener" aria-label="Abrir ficha técnica de orégano en una pestaña nueva">Abrir PDF ↗</a><a href="docs/ficha-tecnica-oregano.pdf" download>Descargar ↓</a></div>
+          <div class="document-info"><p>ACTIVIDAD · DISEÑO</p><h3>Diseños estructurales</h3><span>Actividad 2 · Referentes y propuestas para construir los prototipos.</span></div>
+          <div class="document-actions"><button class="preview-button" type="button" data-pdf="https://res.cloudinary.com/uekr7zb5/image/upload/v1794543748/actividad-2-disenos-estructurales.pdf" aria-expanded="false">Vista previa</button><a href="https://res.cloudinary.com/uekr7zb5/image/upload/v1794543748/actividad-2-disenos-estructurales.pdf" download>Descargar <span aria-hidden="true">↓</span></a></div>
+          <div class="pdf-preview" hidden></div>
         </article>
         <article class="document-card">
           <span class="document-icon" aria-hidden="true">PDF</span>
-          <div class="document-info"><p>CULTIVOS</p><h3>Ficha técnica de lechuga crespa</h3><span>Datos de producto y orientaciones para el cultivo de lechuga.</span></div>
-          <div class="document-actions"><a href="docs/ficha-tecnica-lechuga-crespa.pdf" target="_blank" rel="noopener" aria-label="Abrir ficha técnica de lechuga crespa en una pestaña nueva">Abrir PDF ↗</a><a href="docs/ficha-tecnica-lechuga-crespa.pdf" download>Descargar ↓</a></div>
+          <div class="document-info"><p>ACTIVIDAD · PROTOTIPO</p><h3>Diseño del prototipo</h3><span>Actividad 3 · Registro del proceso de diseño de la huerta escolar.</span></div>
+          <div class="document-actions"><button class="preview-button" type="button" data-pdf="https://res.cloudinary.com/uekr7zb5/image/upload/v1794543748/actividad-3-diseno-prototipo.pdf" aria-expanded="false">Vista previa</button><a href="https://res.cloudinary.com/uekr7zb5/image/upload/v1794543748/actividad-3-diseno-prototipo.pdf" download>Descargar <span aria-hidden="true">↓</span></a></div>
+          <div class="pdf-preview" hidden></div>
+        </article>
+        <article class="document-card">
+          <span class="document-icon" aria-hidden="true">PDF</span>
+          <div class="document-info"><p>ENCUESTA · DIAGNÓSTICO</p><h3>Encuesta diagnóstica de compost</h3><span>Instrumento y síntesis inicial de respuestas del grupo.</span></div>
+          <div class="document-actions"><button class="preview-button" type="button" data-pdf="https://res.cloudinary.com/uekr7zb5/image/upload/v1794543744/encuesta-diagnostica-compost.pdf" aria-expanded="false">Vista previa</button><a href="https://res.cloudinary.com/uekr7zb5/image/upload/v1794543744/encuesta-diagnostica-compost.pdf" download>Descargar <span aria-hidden="true">↓</span></a></div>
+          <div class="pdf-preview" hidden></div>
+        </article>
+        <article class="document-card">
+          <span class="document-icon" aria-hidden="true">PDF</span>
+          <div class="document-info"><p>TECNOLOGÍA · SENSORES</p><h3>Informe de Arduino y sensores</h3><span>Material de apoyo para el componente de electrónica y monitoreo.</span></div>
+          <div class="document-actions"><button class="preview-button" type="button" data-pdf="https://res.cloudinary.com/uekr7zb5/image/upload/v1794543743/informe-arduino-sensores.pdf" aria-expanded="false">Vista previa</button><a href="https://res.cloudinary.com/uekr7zb5/image/upload/v1794543743/informe-arduino-sensores.pdf" download>Descargar <span aria-hidden="true">↓</span></a></div>
+          <div class="pdf-preview" hidden></div>
+        </article>
+        <article class="document-card">
+          <span class="document-icon" aria-hidden="true">PDF</span>
+          <div class="document-info"><p>CULTIVOS · FICHAS TÉCNICAS</p><h3>Lechuga crespa y orégano</h3><span>Recomendaciones de cultivo para dos especies trabajadas en la huerta.</span></div>
+          <div class="document-actions"><button class="preview-button" type="button" data-pdf="docs/fichas-lechuga-y-oregano.pdf" aria-expanded="false">Vista previa</button><a href="docs/fichas-lechuga-y-oregano.pdf" download>Descargar <span aria-hidden="true">↓</span></a></div>
+          <div class="pdf-preview" hidden></div>
+        </article>
+        <article class="document-card">
+          <span class="document-icon" aria-hidden="true">PDF</span>
+          <div class="document-info"><p>MARCO PEDAGÓGICO</p><h3>Modelo pedagógico IEPS 2026</h3><span>Documento de referencia para comprender el contexto educativo.</span></div>
+          <div class="document-actions"><button class="preview-button" type="button" data-pdf="docs/modelo-pedagogico-institucional.pdf" aria-expanded="false">Vista previa</button><a href="docs/modelo-pedagogico-institucional.pdf" download>Descargar <span aria-hidden="true">↓</span></a></div>
+          <div class="pdf-preview" hidden></div>
         </article>
       </div>
-      <p class="public-note">Se publican copias de consulta sin metadatos personales. Los formularios con datos de identificación, respuestas de encuestas y archivos con enlaces internos se omiten para proteger la privacidad.</p>
+      <a class="sheet-link" href="#sensor-survey-chart"><span aria-hidden="true">↗</span><span><strong>Resumen de la encuesta de Arduino y sensores</strong><small>Distribución agregada de respuestas · n = 25</small></span><span aria-hidden="true">↓</span></a>
     </section>
 
     <section class="ar-section section-pad" id="realidad-aumentada" aria-labelledby="ar-title">
@@ -525,8 +562,41 @@ void loop() {
             <span class="model-pot pot-one">✿</span><span class="model-pot pot-two">✿</span><span class="model-pot pot-three">✿</span>
           </div>
           <div class="irrigation-preview" aria-hidden="true" hidden>
-            <span class="irrigation-preview-play">▶</span>
-            <span>VIDEO EXPLICATIVO<strong>ARDUINO · SENSORES · RIEGO</strong></span>
+            <svg class="watering-illustration" viewBox="0 0 420 220" focusable="false">
+              <circle cx="358" cy="48" r="25" fill="#d3e67c"></circle>
+              <path d="M25 181H395" fill="none" stroke="#9eaa8d" stroke-linecap="round" stroke-width="2"></path>
+              <path d="M78 103C68 69 136 62 137 102" fill="none" stroke="#214f39" stroke-linecap="round" stroke-width="9"></path>
+              <path d="M75 96H135C148 96 157 106 157 120V162H66V119C66 106 66 96 75 96Z" fill="#d88b64" stroke="#214f39" stroke-linejoin="round" stroke-width="4"></path>
+              <path d="M148 111L193 86L204 96L158 132" fill="#d88b64" stroke="#214f39" stroke-linejoin="round" stroke-width="4"></path>
+              <path d="M193 86L207 78L216 88L204 96" fill="#d3e67c" stroke="#214f39" stroke-linejoin="round" stroke-width="4"></path>
+              <path class="watering-stream" d="M214 89C230 93 239 105 253 117" fill="none" stroke="#5593a0" stroke-dasharray="1 9" stroke-linecap="round" stroke-width="5"></path>
+              <g class="watering-drops" fill="#5593a0" stroke="#edf0e6" stroke-width="1">
+                <path d="M224 99C224 99 216 109 216 114A8 8 0 0 0 232 114C232 109 224 99 224 99Z"></path>
+                <path d="M240 108C240 108 233 117 233 121A7 7 0 0 0 247 121C247 117 240 108 240 108Z"></path>
+                <path d="M257 111C257 111 251 119 251 123A6 6 0 0 0 263 123C263 119 257 111 257 111Z"></path>
+              </g>
+              <g fill="#e1b987" stroke="#214f39" stroke-linejoin="round" stroke-width="3">
+                <path d="M247 151H294L287 179H254Z"></path>
+                <path d="M305 158H347L341 179H311Z"></path>
+                <path d="M352 151H392L386 179H358Z"></path>
+              </g>
+              <g fill="none" stroke="#67874e" stroke-linecap="round" stroke-width="5">
+                <path d="M271 151V112M326 158V127M371 151V111"></path>
+              </g>
+              <g fill="#91a849" stroke="#214f39" stroke-width="2">
+                <path d="M271 127C249 126 245 111 247 103C262 102 271 112 271 127Z"></path>
+                <path d="M271 120C275 105 288 101 297 106C293 119 284 125 271 120Z"></path>
+                <path d="M326 143C310 142 305 132 307 125C319 124 326 131 326 143Z"></path>
+                <path d="M326 138C330 126 340 123 347 127C344 137 337 142 326 138Z"></path>
+                <path d="M371 126C354 125 350 112 352 105C364 104 371 112 371 126Z"></path>
+                <path d="M371 119C375 107 386 104 393 108C390 119 383 123 371 119Z"></path>
+              </g>
+              <g fill="#d88b64">
+                <circle cx="83" cy="112" r="4"></circle>
+                <circle cx="99" cy="112" r="4"></circle>
+                <circle cx="115" cy="112" r="4"></circle>
+              </g>
+            </svg>
           </div>
           <span class="stage-tag">MODELO 3D · HUERTA VERTICAL</span>
           <span class="stage-coordinates">AR / 01</span>
@@ -547,7 +617,10 @@ void loop() {
         <p class="marker-status" role="status" aria-live="polite"></p>
         <label class="model-upload">¿Tienes un modelo propio? <span>Cargar archivo .glb / .gltf</span><input type="file" accept=".glb,.gltf,model/gltf-binary,model/gltf+json"></label>
       </div>
-      <video class="ar-video-source" id="riego-automatico-video" preload="none" muted playsinline crossorigin="anonymous" aria-hidden="true" tabindex="-1">
+      <video class="ar-video-source" id="sistemagoteo-video" preload="none" muted loop playsinline aria-hidden="true" tabindex="-1">
+        <source src="https://res.cloudinary.com/uekr7zb5/video/upload/v1794536798/sistema-riego-automatizado.mp4" type="video/mp4">
+      </video>
+      <video class="ar-video-source" id="riego-automatico-video" preload="none" muted playsinline aria-hidden="true" tabindex="-1">
         <source src="https://res.cloudinary.com/uekr7zb5/video/upload/v1794536794/riego-demo.mp4" type="video/mp4">
       </video>
       <div class="ar-viewer" hidden>
@@ -585,7 +658,7 @@ void loop() {
   <footer class="site-footer">
     <a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">✳</span><span>sembrar<span class="brand-light"> para aprender</span></span></a>
     <p>Proyecto de huertas escolares · Neiva, Huila</p>
-    <a href="#documentos">Materiales y privacidad <span aria-hidden="true">↗</span></a>
+    <a href="#documentos">Biblioteca del proyecto <span aria-hidden="true">↗</span></a>
     <small>Investigación, naturaleza y aprendizaje.</small>
   </footer>
 </body>

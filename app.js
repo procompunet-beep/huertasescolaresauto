@@ -107,6 +107,178 @@ copyCodeButton.addEventListener("click", async () => {
   }
 });
 
+const sensorSurvey = [
+  {
+    prompt: "¿Para qué cree que sirve un sensor en una huerta escolar?",
+    responses: 25,
+    options: [
+      ["Para decorar las plantas", 7],
+      ["Para medir condiciones del ambiente como humedad y temperatura", 8],
+      ["Para tomar fotos de las plantas", 0],
+      ["No estoy seguro/a", 10]
+    ]
+  },
+  {
+    prompt: "¿Ha escuchado hablar de sensores de humedad del suelo?",
+    responses: 25,
+    options: [
+      ["Sí, sé cómo funcionan", 5],
+      ["Sí, pero no sé cómo funcionan", 12],
+      ["No, nunca", 8]
+    ]
+  },
+  {
+    prompt: "¿Cuál cree que es el beneficio principal de usar sensores en una huerta?",
+    responses: 25,
+    options: [
+      ["Evitan totalmente el trabajo manual", 12],
+      ["Ayudan a saber cuándo las plantas necesitan agua", 12],
+      ["Permiten jugar videojuegos desde la huerta", 1],
+      ["No sé", 0]
+    ]
+  },
+  {
+    prompt: "¿Qué dispositivos cree que pueden conectarse a sensores en una huerta escolar?",
+    responses: 23,
+    options: [
+      ["Un teléfono Android", 12],
+      ["Una calculadora", 6],
+      ["Un televisor", 4],
+      ["No sé", 1]
+    ]
+  },
+  {
+    prompt: "¿Conoce alguna aplicación Android que permita ver datos de sensores, como humedad o temperatura?",
+    responses: 25,
+    options: [
+      ["Sí, he usado alguna", 6],
+      ["Sí, pero no la he usado", 4],
+      ["No conozco ninguna", 15]
+    ]
+  },
+  {
+    prompt: "¿Para qué podría servir una aplicación Android en el cuidado de la huerta?",
+    responses: 25,
+    options: [
+      ["Para registrar y visualizar datos de riego", 12],
+      ["Para colorear dibujos", 1],
+      ["Para reproducir música a las plantas", 0],
+      ["No sé", 12]
+    ]
+  },
+  {
+    prompt: "¿Qué información cree que se puede medir con sensores básicos en una huerta escolar?",
+    responses: 25,
+    multiple: true,
+    options: [
+      ["Humedad del suelo", 12],
+      ["Temperatura del ambiente", 8],
+      ["Luz solar recibida", 3],
+      ["Peso de las plantas", 1],
+      ["No sé", 1]
+    ]
+  },
+  {
+    prompt: "¿Ha utilizado alguna vez un dispositivo Android (celular o tableta) para tomar datos o hacer experimentos en clase?",
+    responses: 25,
+    options: [
+      ["Sí, varias veces", 15],
+      ["Sí, una vez", 3],
+      ["No, nunca", 7]
+    ]
+  },
+  {
+    prompt: "¿Qué tan fácil cree que es conectar un sensor a un dispositivo Android usando Bluetooth o Wi-Fi?",
+    responses: 25,
+    options: [
+      ["Muy fácil", 5],
+      ["Difícil", 12],
+      ["No lo sé", 4],
+      ["Nunca lo he intentado", 4]
+    ]
+  },
+  {
+    prompt: "¿Qué tanto considera que sabe sobre el uso de sensores para una huerta escolar?",
+    responses: 25,
+    options: [
+      ["Nada", 0],
+      ["Poco", 2],
+      ["Regular", 3],
+      ["Suficiente", 5],
+      ["Bastante", 15]
+    ]
+  }
+];
+
+const sensorSurveyAccordion = document.querySelector(".sensor-survey-accordion");
+
+sensorSurvey.forEach((question, index) => {
+  const details = document.createElement("details");
+  details.className = "sensor-survey-item";
+  details.open = index === 0;
+
+  const summary = document.createElement("summary");
+  const number = document.createElement("span");
+  number.className = "sensor-survey-number";
+  number.setAttribute("aria-hidden", "true");
+  number.textContent = String(index + 1).padStart(2, "0");
+  const prompt = document.createElement("span");
+  prompt.textContent = question.prompt;
+  summary.append(number, prompt);
+
+  const results = document.createElement("div");
+  results.className = "sensor-survey-results";
+  results.setAttribute("role", "list");
+  results.setAttribute("aria-label", `Respuestas de la pregunta ${index + 1}`);
+  question.options.forEach(([label, count]) => {
+    const percentage = Math.round((count / question.responses) * 100);
+    const item = document.createElement("div");
+    item.className = "sensor-survey-response";
+    item.setAttribute("role", "listitem");
+
+    const heading = document.createElement("div");
+    heading.className = "sensor-survey-response-head";
+    const answer = document.createElement("span");
+    answer.textContent = label;
+    const value = document.createElement("strong");
+    value.textContent = `${percentage}%`;
+    heading.append(answer, value);
+
+    const track = document.createElement("div");
+    track.className = "sensor-survey-track";
+    track.setAttribute("aria-hidden", "true");
+    const bar = document.createElement("span");
+    bar.style.setProperty("--value", `${percentage}%`);
+    track.append(bar);
+
+    const countLabel = document.createElement("span");
+    countLabel.className = "sensor-survey-count";
+    countLabel.textContent = question.multiple
+      ? `${count} de 25 participantes`
+      : `${count} de ${question.responses} respuestas`;
+    item.append(heading, track, countLabel);
+    results.append(item);
+  });
+
+  const note = document.createElement("p");
+  note.className = "sensor-survey-meta";
+  const base = question.responses < 25
+    ? `${question.responses} respuestas válidas de 25 participantes.`
+    : `Base: ${question.responses} participantes.`;
+  const multiple = question.multiple
+    ? " Selección múltiple; el porcentaje se calcula sobre participantes."
+    : "";
+  note.textContent = `${base}${multiple}`;
+  details.append(summary, results, note);
+  details.addEventListener("toggle", () => {
+    if (!details.open) return;
+    sensorSurveyAccordion.querySelectorAll(".sensor-survey-item[open]").forEach((openItem) => {
+      if (openItem !== details) openItem.open = false;
+    });
+  });
+  sensorSurveyAccordion.append(details);
+});
+
 document.querySelectorAll(".preview-button").forEach((button) => {
   button.addEventListener("click", () => {
     const preview = button.closest(".document-card").querySelector(".pdf-preview");
@@ -218,6 +390,7 @@ const launchButton = document.querySelector(".ar-launch");
 const fullscreenButton = document.querySelector(".viewer-fullscreen");
 const soundButton = document.querySelector(".viewer-sound");
 const modelInput = document.querySelector(".model-upload input");
+const gardenVideo = document.querySelector("#sistemagoteo-video");
 const irrigationVideo = document.querySelector("#riego-automatico-video");
 let modelUrl = "";
 let launchInProgress = false;
@@ -225,7 +398,7 @@ let targetDetected = false;
 let cameraListenersController;
 
 function getActiveVideo() {
-  return selectedGarden === "irrigation" ? irrigationVideo : null;
+  return selectedGarden === "irrigation" ? irrigationVideo : gardenVideo;
 }
 
 function getActiveExperienceLabel() {
@@ -235,9 +408,11 @@ function getActiveExperienceLabel() {
 }
 
 function resetVideos() {
-  irrigationVideo.pause();
-  irrigationVideo.muted = true;
-  if (irrigationVideo.readyState > 0) irrigationVideo.currentTime = 0;
+  [gardenVideo, irrigationVideo].forEach((video) => {
+    video.pause();
+    video.muted = true;
+    if (video.readyState > 0) video.currentTime = 0;
+  });
   updateSoundButton();
 }
 
@@ -314,7 +489,8 @@ function buildScene() {
     ? `<a-plane position="0 0 0.02" width="1" height="0.5625" material="shader: chromakey; src: #riego-automatico-video; color: 1 1 1"></a-plane>`
     : `${modelUrl
       ? `<a-entity gltf-model="url(${modelUrl})" position="0 0.05 0" scale="0.35 0.35 0.35"></a-entity>`
-      : `<a-entity position="0 0.08 0" scale="0.5 0.5 0.5">${garden}</a-entity>`}`;
+      : `<a-entity position="0 0.08 0" scale="0.5 0.5 0.5">${garden}</a-entity>`}
+      <a-plane position="1.25 0.9 0" width="1.1" height="0.61875" material="shader: chromakey; src: #sistemagoteo-video; color: 1 1 1"></a-plane>`;
   return `<a-scene embedded vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false" renderer="alpha: true; logarithmicDepthBuffer: true; colorManagement: true;" mindar-image="imageTargetSrc: assets/markers/${targetFile}; autoStart: false; uiLoading: no; uiScanning: no;">
     <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
     <a-entity mindar-image-target="targetIndex: ${targetIndex}">
@@ -324,9 +500,7 @@ function buildScene() {
 }
 
 function updateSoundButton() {
-  const video = getActiveVideo();
-  const soundEnabled = Boolean(video && !video.muted);
-  soundButton.disabled = !targetDetected || !video;
+  const soundEnabled = !getActiveVideo().muted;
   soundButton.textContent = soundEnabled ? "Silenciar audio" : "Activar audio";
   soundButton.setAttribute("aria-label", soundEnabled ? "Silenciar audio del video" : "Activar audio del video");
   soundButton.setAttribute("aria-pressed", String(soundEnabled));
@@ -334,7 +508,6 @@ function updateSoundButton() {
 
 async function playActiveVideo() {
   const video = getActiveVideo();
-  if (!video) return;
   try {
     await video.play();
   } catch (error) {
@@ -382,19 +555,16 @@ async function startViewer() {
     }, { once: true, signal: cameraListenersController.signal });
     target.addEventListener("targetFound", () => {
       targetDetected = true;
-      if (selectedGarden === "irrigation") {
-        soundButton.disabled = false;
-        viewerStatus.textContent = "Código QR detectado. Video explicativo del sistema de riego activo.";
-        void playActiveVideo();
-      } else {
-        soundButton.disabled = true;
-        viewerStatus.textContent = "Código QR detectado. Modelo de huerta activo.";
-      }
+      soundButton.disabled = false;
+      viewerStatus.textContent = selectedGarden === "irrigation"
+        ? "Código QR detectado. Video explicativo del sistema de riego activo."
+        : "Código QR detectado. Huerta y video del sistema de goteo activos.";
+      void playActiveVideo();
     }, { signal: cameraListenersController.signal });
     target.addEventListener("targetLost", () => {
       targetDetected = false;
       soundButton.disabled = true;
-      getActiveVideo()?.pause();
+      getActiveVideo().pause();
       viewerStatus.textContent = `Cámara activa. Enfoca el QR ${getActiveExperienceLabel()}.`;
     }, { signal: cameraListenersController.signal });
     if (!scene.hasLoaded) {
@@ -435,7 +605,6 @@ launchButton.addEventListener("click", startViewer);
 soundButton.addEventListener("click", () => {
   if (!targetDetected) return;
   const video = getActiveVideo();
-  if (!video) return;
   video.muted = !video.muted;
   updateSoundButton();
   if (!video.muted && video.paused) {
@@ -443,7 +612,9 @@ soundButton.addEventListener("click", () => {
   }
   viewerStatus.textContent = video.muted
     ? "Video silenciado."
-    : "Audio activado para el video explicativo del sistema de riego.";
+    : selectedGarden === "irrigation"
+      ? "Audio activado para el video explicativo del sistema de riego."
+      : "Audio activado para el video del sistema de goteo.";
 });
 
 fullscreenButton.addEventListener("click", async () => {
