@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title description">
+  <title id="title">Esquema de monitoreo con Arduino</title>
+  <desc id="description">Una planta y un sensor de suelo conectados a una placa controladora mediante cables.</desc>
+  <rect width="800" height="600" rx="28" fill="#eef0e5"/>
+  <path d="M145 420h220l-25 85H170z" fill="#ad7854"/>
+  <path d="M158 420h194l-16 32H174z" fill="#614d38"/>
+  <path d="M252 420V252" stroke="#557342" stroke-width="14" stroke-linecap="round"/>
+  <path d="M250 320c-65-5-81-49-75-83 40 14 64 34 79 61 10-50 47-67 81-62-12 44-39 69-85 84z" fill="#64884a"/>
+  <path d="M278 368c40-47 73-43 95-28-18 25-43 40-94 41" fill="#799957"/>
+  <path d="M219 506l-4 58m54-58 5 58" stroke="#536f41" stroke-width="12" stroke-linecap="round"/>
+  <rect x="440" y="214" width="250" height="190" rx="22" fill="#236d60"/>
+  <rect x="465" y="240" width="200" height="138" rx="12" fill="#2a8874"/>
+  <rect x="495" y="268" width="90" height="70" rx="8" fill="#1e4f48"/>
+  <circle cx="630" cy="274" r="10" fill="#d9e7bc"/>
+  <circle cx="630" cy="314" r="10" fill="#d9e7bc"/>
+  <g fill="#d9bd77">
+    <circle cx="461" cy="228" r="5"/><circle cx="491" cy="228" r="5"/><circle cx="521" cy="228" r="5"/>
+    <circle cx="551" cy="228" r="5"/><circle cx="581" cy="228" r="5"/><circle cx="611" cy="228" r="5"/>
+    <circle cx="641" cy="228" r="5"/><circle cx="671" cy="228" r="5"/>
+  </g>
+  <path d="M335 370C395 375 409 326 440 326" fill="none" stroke="#d16c55" stroke-width="8"/>
+  <path d="M323 470C395 470 390 362 440 362" fill="none" stroke="#d7a648" stroke-width="8"/>
+  <rect x="135" y="120" width="24" height="200" rx="8" fill="#668b43"/>
+  <path d="M120 144h55v14h-55z" fill="#dbe4c8"/>
+  <path d="M135 330v46m24-46v46" stroke="#415d35" stroke-width="8" stroke-linecap="round"/>
+  <path d="M156 150C278 92 390 149 480 242" fill="none" stroke="#d16c55" stroke-width="5" stroke-dasharray="10 10"/>
+  <text x="550" y="444" fill="#355b4e" font-family="sans-serif" font-size="24" text-anchor="middle">LECTURA · ALERTA · CUIDADO</text>
+</svg>

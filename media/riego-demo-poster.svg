@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title description">
+  <title id="title">Demostración de riego automático</title>
+  <desc id="description">Ilustración de una planta regada por una bomba de agua y un sistema de sensores.</desc>
+  <rect width="800" height="450" rx="24" fill="#234f39"/>
+  <circle cx="400" cy="225" r="115" fill="#f5f5ec" opacity=".12"/>
+  <path d="M360 298h140l-20 54H380z" fill="#ad7854"/>
+  <path d="M375 298h110l-10 21h-90z" fill="#614d38"/>
+  <path d="M430 298V185" stroke="#73964f" stroke-width="12" stroke-linecap="round"/>
+  <path d="M428 230c-48-4-60-37-56-63 30 10 46 25 58 47 8-38 36-51 61-47-9 34-30 52-63 63z" fill="#a8c77a"/>
+  <rect x="142" y="278" width="102" height="68" rx="14" fill="#d7e6ea"/>
+  <path d="M155 305h76" stroke="#5c97a5" stroke-width="10" stroke-linecap="round"/>
+  <path d="M244 312C292 312 302 329 360 329" fill="none" stroke="#80c7dc" stroke-width="12" stroke-linecap="round"/>
+  <rect x="573" y="256" width="105" height="80" rx="12" fill="#2a8874"/>
+  <rect x="593" y="274" width="65" height="42" rx="5" fill="#1e4f48"/>
+  <path d="M573 290C541 262 521 248 494 246" fill="none" stroke="#d9bd77" stroke-width="7"/>
+  <path d="M288 135h224" stroke="#d8e6d3" stroke-width="2" opacity=".7"/>
+  <text x="400" y="100" fill="#f5f5ec" font-family="sans-serif" font-size="26" font-weight="700" text-anchor="middle">SENSOR · ARDUINO · RIEGO</text>
+  <circle cx="400" cy="225" r="38" fill="#f5f5ec"/>
+  <path d="m391 204 31 21-31 21z" fill="#234f39"/>
+</svg>

@@ -1,0 +1,17 @@
+# No añadir los archivos fuente con información personal a la copia pública.
+/1/
+/4/
+/5/
+/cloudinary-upload/
+/media/*
+!/media/arduino.svg
+!/media/riego-demo-poster.svg
+!/media/riego-demo.mp4
+*.pdf
+*.xlsx
+*.xls
+*.docx
+*.pptx
+
+.DS_Store
+Thumbs.db
