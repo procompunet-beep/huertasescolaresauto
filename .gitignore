@@ -12,6 +12,8 @@
 *.xls
 *.docx
 *.pptx
+!/docs/
+!/docs/*.pdf
 
 .DS_Store
 Thumbs.db

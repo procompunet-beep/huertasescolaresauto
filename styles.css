@@ -327,9 +327,13 @@ h1 em, h2 em { color: #688448; font-weight: 500; }
 }
 @media (max-width: 900px) {
   :root { --page-gutter: 5vw; }
-  .site-header { height: 76px; }
-  .primary-nav { gap: 1.15rem; }
-  .primary-nav a { font-size: .7rem; }
+  .site-header { position: sticky; z-index: 10; top: 0; height: 76px; }
+  .menu-toggle { display: flex; width: 42px; height: 42px; flex-direction: column; align-items: center; justify-content: center; gap: 5px; border: 1px solid #cbd0c2; border-radius: 50%; background: transparent; }
+  .menu-toggle span:not(.sr-only) { width: 15px; height: 1px; background: var(--green); }
+  .primary-nav { position: absolute; top: 75px; right: 0; left: 0; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: .6rem var(--page-gutter) 1rem; border-bottom: 1px solid var(--line); background: var(--cream); }
+  .primary-nav.is-open { display: flex; }
+  .primary-nav a { padding: .75rem 0; font-size: .83rem; }
+  .primary-nav .nav-cta { align-self: flex-start; margin-top: .5rem; padding: .65rem .9rem; }
   .hero { min-height: 530px; gap: 2vw; }
   .hero h1 { font-size: clamp(3rem, 7vw, 4.7rem); }
   .hero-visual { height: 43vw; min-height: 310px; }
@@ -343,7 +347,7 @@ h1 em, h2 em { color: #688448; font-weight: 500; }
 @media (max-width: 680px) {
   :root { --page-gutter: 1.25rem; }
   html { scroll-padding-top: 4.6rem; }
-  .site-header { position: sticky; z-index: 10; top: 0; height: 68px; border-bottom: 1px solid #e5e5dc; }
+  .site-header { height: 68px; border-bottom: 1px solid #e5e5dc; }
   .brand { font-size: .93rem; }
   .menu-toggle { display: flex; width: 42px; height: 42px; flex-direction: column; align-items: center; justify-content: center; gap: 5px; border: 1px solid #cbd0c2; border-radius: 50%; background: transparent; }
   .menu-toggle span:not(.sr-only) { width: 15px; height: 1px; background: var(--green); }

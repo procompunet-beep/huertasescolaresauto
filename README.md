@@ -7,11 +7,12 @@ Portal educativo estático sobre huertas escolares, tecnología y realidad aumen
 - Sitio responsive en español con secciones del proyecto, proceso, comparación, tecnología, multimedia y realidad aumentada.
 - Tres marcadores QR independientes: huerta vertical, huerta convencional y video explicativo del sistema de riego.
 - Fotos autorizadas del proceso y videos del proyecto alojados en Cloudinary, además de esquemas ilustrados propios.
+- Biblioteca con cuatro PDF pedagógicos y fichas técnicas revisadas; las copias públicas no conservan metadatos personales.
 - Código Arduino de ejemplo y filtros de galería con ampliación accesible.
 
-Las fotografías autorizadas del proceso y los videos enlazados se sirven desde Cloudinary; las copias de carga de las fotos se prepararon sin EXIF. Se omiten documentos de trabajo y resultados detallados. No copies aquí los directorios originales `1/`, `4/` o `5/` sin revisar el contenido, los permisos y los metadatos.
+Las fotografías autorizadas del proceso y los videos enlazados se sirven desde Cloudinary; las copias de carga de las fotos se prepararon sin EXIF. Se excluyen formularios con datos de identificación, respuestas de encuestas, documentos con contactos de autores y archivos con enlaces internos a unidades compartidas. No copies aquí los directorios originales `1/`, `4/` o `5/` sin revisar el contenido, los permisos y los metadatos.
 
-La página enlaza las 20 fotos y los videos registrados en `cloudinary-upload/MANIFEST.tsv`. Las copias de carga se conservan localmente para referencia y están excluidas de Git.
+La página enlaza las 20 fotos y los videos registrados en `cloudinary-upload/MANIFEST.tsv`. Los cuatro PDF de `docs/` son copias revisadas con metadatos de autor eliminados. Las copias de carga de `cloudinary-upload/` se conservan localmente para referencia y están excluidas de Git.
 
 ## Probar localmente
 
